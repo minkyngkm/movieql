@@ -6,9 +6,13 @@
   "repository": "https://github.com/minkyngkm/movieql.git",
   "license": "MIT",
   "dependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.9",
     "graphql-yoga": "^1.18.3"
   },
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon --exec babel-node index.js"
   }
 }
