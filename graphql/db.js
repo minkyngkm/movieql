@@ -20,3 +20,9 @@ export const getMovie = (id) => {
     .then((res) => res.json())
     .then((json) => json.data.movie);
 };
+
+export const getSuggestions = (id) => {
+  return fetch(`${API_URL}/movie_suggestions.json?movie_id=${id}`)
+    .then((res) => res.json())
+    .then((json) => json.data.movies);
+};
