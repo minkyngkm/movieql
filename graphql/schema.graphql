@@ -1,5 +1,6 @@
 type Query {
   movies(limit: Int, rating: Float): [Movie]!
+  movie(id: Int!): Movie!
 }
 type Movie {
   id: Int!
